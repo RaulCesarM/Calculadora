@@ -1,0 +1,36 @@
+﻿
+@model  Calculadora.Models.Calcu
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<form asp-action="Index" >
+
+         <div class="text-center">
+           <h3 class="display-4">Welcome Dev In House teste in Cypress</h3>
+           <br />
+          
+           <p><input type="number" placeholder="valor 1" asp-for="value1"/></p>
+           <br />
+           
+           
+           <p><input type="number"  placeholder="valor 2" asp-for="value2"/></p>
+           <br />           
+
+           <input type="submit" value="somar"        asp-for="Acao"/>
+           <input type="submit" value="subtrair"    asp-for="Acao"/>
+           <input type="submit" value="dividir"     asp-for="Acao"/>
+           <input type="submit" value="multiplicar" asp-for="Acao"/>
+           <input type="submit" value="Limpar" asp-for="Acao"/>
+           <br />  
+           <p></p>
+   
+             
+           <p><input type"number" placeholder="Resultado" asp-for="@ViewData["resultado"]"/></p>
+
+        </div>
+
+</form>
+
